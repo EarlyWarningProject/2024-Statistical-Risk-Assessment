@@ -1,1 +1,6 @@
 # 2024-Statistical-Risk-Assessment
+Replication files for the 2024 edition of USHMM's statistical risk assessment, using R version 4.2.3 (2023-03-15).
+
+To reproduce the input data "prepared2023predictors-2024-10-10.csv", start with 1.Buildcountryyears_and_mk_data. The file "build_countryyears_mkevents_2024.R" creates the initial country-year dataset with mass killing data from 1945 - 2023, available in the file "basedata2023_10oct2024.csv". The files stored in 2.Make-new-base-data take this initial template and add data on other variables as well as new data for 2023. The file "2b.Adding in new data-2024-10-10" is an R Markdown file that appends data for each country in 2023 to the prepared data through 2022. This creates the input file used for modeling, "prepared2023predictors-2024-10-10.csv".
+
+To run the models and replicate the risk rankings without reproducing the base data, go to "3.Modeling" and open the file "protomodel_10oct2024.R". Use the input file "prepared2023predictors-2024-10-10.csv.csv" that is available in the same folder. "final_forecasts_data_11Oct2024.csv" and "coefficients_11Oct2024.csv" are the outputs of the "protomodel_10oct2024.R" file. The former file shows the predicted probabilities for each country, and the latter shows the weights for each of the predictors selected.
