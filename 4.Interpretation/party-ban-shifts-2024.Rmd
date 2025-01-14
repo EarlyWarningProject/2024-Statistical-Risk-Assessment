@@ -1,0 +1,131 @@
+---
+title: "Party Ban Shifts"
+author: "Natalie Bryce"
+date: "2024-10-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#look at partyban
+```{r}
+partyban2024 <- results %>% 
+  select(ewp_name, risk.2024and2025.from2023,rank.2024and2025.from2023,partyban.new.0,partyban.new.1,partyban.new.2) %>% 
+  filter(rank.2024and2025.from2023 <= 30)
+
+partyban2023 <- read.csv("final_forecasts_data_30Oct_newWBdata.csv")
+
+partyban2023 <- partyban2023 %>% 
+  select(country, risk.2023and2024.from2022, rank.2023and2024.from2022, partyban.new.0,partyban.new.1,partyban.new.2) %>% 
+    filter(rank.2023and2024.from2022 <= 30)
+
+# Summarize partyban binary variables for last year
+partyban_summary_last <- data.frame(
+  Category = c("No Parties Banned", "Some Parties Banned", "All Parties Banned"),
+  Count = c(
+    sum(partyban2023$partyban.new.2 == 1),  # No parties banned
+    sum(partyban2023$partyban.new.1 == 1),  # Some parties banned
+    sum(partyban2023$partyban.new.0 == 1)   # All parties except state-sponsored banned
+  )
+)
+
+# Summarize partyban binary variables for this year
+partyban_summary_this <- data.frame(
+  Category = c("No Parties Banned", "Some Parties Banned", "All Parties Banned"),
+  Count = c(
+    sum(partyban2024$partyban.new.2 == 1),  # No parties banned
+    sum(partyban2024$partyban.new.1 == 1),  # Some parties banned
+    sum(partyban2024$partyban.new.0 == 1)   # All parties except state-sponsored banned
+  )
+)
+
+# Combine summaries into a single data frame for comparison
+partyban_summary <- merge(partyban_summary_last, partyban_summary_this, by = "Category", suffixes = c("_last", "_this"))
+print(partyban_summary)
+
+
+
+```
+```{r}
+# Calculate average risk scores by partyban category
+avg_risk_last <- data.frame(
+  Category = c("All Banned", "Some", "None"),
+  Risk_Score = c(
+    mean(partyban2023$risk.2023and2024.from2022[partyban2023$partyban.new.0 == 1], na.rm = TRUE),
+    mean(partyban2023$risk.2023and2024.from2022[partyban2023$partyban.new.1 == 1], na.rm = TRUE),
+    mean(partyban2023$risk.2023and2024.from2022[partyban2023$partyban.new.2 == 1], na.rm = TRUE)
+  )
+)
+
+avg_risk_this <- data.frame(
+  Category = c("All Banned", "Some", "None"),
+  Risk_Score = c(
+    mean(partyban2024$risk.2024and2025.from2023[partyban2024$partyban.new.0 == 1], na.rm = TRUE),
+    mean(partyban2024$risk.2024and2025.from2023[partyban2024$partyban.new.1 == 1], na.rm = TRUE),
+    mean(partyban2024$risk.2024and2025.from2023[partyban2024$partyban.new.2 == 1], na.rm = TRUE)
+  )
+)
+
+# Merge the two data frames for comparison
+avg_risk_comparison <- merge(avg_risk_last, avg_risk_this, by = "Category", suffixes = c("_last", "_this"))
+print(avg_risk_comparison)
+
+```
+
+```{r}
+# Find countries that shifted in partyban status
+shifted_countries <- merge(
+  partyban2023[partyban2023$partyban.new.0 == 1 | partyban2023$partyban.new.1 == 1 | partyban2023$partyban.new.2 == 1, ],
+  partyban2024[partyban2024$partyban.new.0 == 1 | partyban2024$partyban.new.1 == 1 | partyban2024$partyban.new.2 == 1, ],
+  by.x = "country",     # Column from partyban2023
+  by.y = "ewp_name",    # Column from partyban2024
+  suffixes = c("_last", "_this")
+)
+
+# Select relevant columns to view changes
+shifted_countries <- shifted_countries[, c("country", "partyban.new.0_last", "partyban.new.0_this", "partyban.new.1_last", "partyban.new.1_this", "partyban.new.2_last", "partyban.new.2_this", "risk.2023and2024.from2022", "risk.2024and2025.from2023")]
+print(shifted_countries)
+
+write.csv(shifted_countries, "shifted_partyban.csv")
+
+changes <- shifted_countries %>%
+  mutate(
+    change_0 = partyban.new.0_this - partyban.new.0_last,
+    change_1 = partyban.new.1_this - partyban.new.1_last,
+    change_2 = partyban.new.2_this - partyban.new.2_last
+  ) %>%
+  filter(change_0 != 0 | change_1 != 0 | change_2 != 0) %>%
+  select(country, change_0, change_1, change_2)
+
+# Print changes
+print(changes)
+
+```
+
+```{r}
+library(ggplot2)
+library(reshape2)
+# Reshape the data for ggplot
+melted_data <- melt(avg_risk_comparison, id.vars = "Category", 
+                    variable.name = "Year", value.name = "Risk_Score")
+
+# Adjust Year variable to be more informative
+melted_data$Year <- factor(melted_data$Year, 
+                           levels = c("Risk_Score_last", "Risk_Score_this"), 
+                           labels = c("2023", "2024"))
+
+# Create the bar plot
+partybanplot <- ggplot(melted_data, aes(x = Category, y = Risk_Score, fill = Year)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = c("2023" = "blue", "2024" = "orange")) +
+  labs(title = "Average Risk Score by Party Ban Category",
+       x = "Party Ban Category",
+       y = "Average Risk Score",
+       fill = "Year") +
+  theme_minimal()
+
+ggsave("partybanplot.jpg", plot = partybanplot)
+
+```
