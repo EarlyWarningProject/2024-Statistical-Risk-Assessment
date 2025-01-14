@@ -1,0 +1,293 @@
+year,country,unpd.imr.sqrt
+1960,Afghanistan,15.43696861
+2023,Afghanistan,6.633249581
+2023,Algeria,4.219004622
+1975,Angola,12.30853363
+1976,Angola,12.27599283
+1977,Angola,12.21474519
+1978,Angola,12.15730233
+1979,Angola,12.10371844
+2023,Angola,6.971370023
+1960,Argentina,7.823042886
+1961,Argentina,7.778174593
+1962,Argentina,7.733045972
+1963,Argentina,7.681145748
+1964,Argentina,7.6223356
+1965,Argentina,7.56306816
+1966,Argentina,7.503332593
+1967,Argentina,7.443117626
+1968,Argentina,7.375635566
+2023,Argentina,3
+2023,Azerbaijan,3.860051813
+2023,Bangladesh,4.774934555
+2023,Bosnia-Herzegovina,2.302172887
+2023,Burkina Faso (Upper Volta),7.231873893
+1962,Burundi,12.03328717
+1963,Burundi,12.00833044
+2023,Burundi,5.949789912
+1960,Cambodia (Kampuchea),12.1449578
+1961,Cambodia (Kampuchea),12.04989627
+1962,Cambodia (Kampuchea),11.9540788
+1963,Cambodia (Kampuchea),11.86170308
+1964,Cambodia (Kampuchea),11.7686023
+1965,Cambodia (Kampuchea),11.6747591
+1966,Cambodia (Kampuchea),11.5974135
+1967,Cambodia (Kampuchea),11.50651989
+1968,Cambodia (Kampuchea),11.4280357
+1969,Cambodia (Kampuchea),11.35781669
+1970,Cambodia (Kampuchea),44.38468204
+1971,Cambodia (Kampuchea),11.25166654
+1972,Cambodia (Kampuchea),11.20714058
+1973,Cambodia (Kampuchea),11.17586686
+1974,Cambodia (Kampuchea),11.14450537
+2023,Cambodia (Kampuchea),4.38178046
+2023,Central African Republic,8.276472679
+1960,Chad,13.34915728
+1961,Chad,13.27780102
+1962,Chad,13.20227253
+1963,Chad,13.13011805
+1964,Chad,13.04990421
+1965,Chad,12.99230542
+1966,Chad,12.8724512
+1967,Chad,12.77497554
+1968,Chad,12.67675037
+1969,Chad,12.57378225
+1970,Chad,12.4739729
+1971,Chad,12.43382483
+2023,Chad,8.01249025
+2023,Chile,2.024845673
+1960,China,14.00357097
+1961,China,12.42175511
+1962,China,9.92975327
+1963,China,9.808159868
+1964,China,9.68504001
+1965,China,9.555103348
+1966,China,9.418067742
+1967,China,9.279008568
+1968,China,9.132360045
+2023,China,2.258317958
+2023,Colombia,3.130495168
+2023,Congo,5.366563146
+1960,"Congo, Democratic Republic of (Zaire)",12.65701387
+1961,"Congo, Democratic Republic of (Zaire)",12.64515718
+1962,"Congo, Democratic Republic of (Zaire)",12.58173279
+1963,"Congo, Democratic Republic of (Zaire)",12.509996
+1964,"Congo, Democratic Republic of (Zaire)",12.4739729
+1965,"Congo, Democratic Republic of (Zaire)",12.36122971
+1966,"Congo, Democratic Republic of (Zaire)",12.21883792
+1967,"Congo, Democratic Republic of (Zaire)",12.13260071
+1968,"Congo, Democratic Republic of (Zaire)",12.04574614
+2023,"Congo, Democratic Republic of (Zaire)",7.021395873
+2023,Cote D'Ivoire,7.190271205
+2023,Croatia,1.870828693
+2023,Cuba,2.097617696
+2023,Czech Republic,1.483239697
+2023,Dominican Republic,5.059644256
+2023,East Timor,6.131883887
+2023,Egypt,3.820994635
+2023,El Salvador,3.082207001
+1960,Ethiopia,12.88021739
+1961,Ethiopia,12.73970172
+1962,Ethiopia,12.60555433
+1963,Ethiopia,12.6015872
+1964,Ethiopia,12.37335848
+1965,Ethiopia,12.30853363
+2023,Ethiopia,5.744562647
+2023,Georgia,2.846049894
+2023,Guinea,8.087026648
+2023,Haiti,6.587867637
+2023,Hungary,1.788854382
+2023,India,4.75394573
+2023,Indonesia,4.135214626
+1960,Iran (Persia),13.1833228
+1961,Iran (Persia),13.06522101
+1962,Iran (Persia),12.98075499
+1963,Iran (Persia),12.81405478
+1964,Iran (Persia),12.68069399
+1965,Iran (Persia),12.54591567
+1966,Iran (Persia),12.4016128
+1967,Iran (Persia),12.24336555
+1968,Iran (Persia),12.10784869
+1969,Iran (Persia),11.8785521
+1970,Iran (Persia),11.69187752
+2023,Iran (Persia),3.146426545
+2023,Iraq,4.358898944
+2023,"Korea, Republic of",1.449137675
+1960,Laos,13.55728586
+1961,Laos,13.47219359
+1962,Laos,13.38282481
+1963,Laos,13.29285522
+1964,Laos,13.20605922
+1965,Laos,13.11868896
+1966,Laos,13.06522101
+1967,Laos,12.93831519
+1968,Laos,12.85301521
+1969,Laos,12.76714533
+1970,Laos,12.68463638
+1971,Laos,12.6015872
+1972,Laos,12.51798706
+1973,Laos,12.42980289
+1974,Laos,12.34503949
+1975,Laos,12.25969005
+1976,Laos,12.19426095
+1977,Laos,12.08718329
+1960,Myanmar (Burma),12.56980509
+1961,Myanmar (Burma),12.42175511
+1962,Myanmar (Burma),12.27191917
+1963,Myanmar (Burma),12.11197754
+1964,Myanmar (Burma),11.93733639
+1965,Myanmar (Burma),11.76010204
+1966,Myanmar (Burma),11.58447237
+1967,Myanmar (Burma),11.42365966
+2023,Nepal,4.679743583
+2023,Nicaragua,3.507135583
+1960,Nigeria,12.47798061
+1961,Nigeria,12.44588285
+1962,Nigeria,12.41370211
+1963,Nigeria,12.38143772
+2023,Pakistan,7.028513356
+2023,Peru,3.420526275
+2023,Philippines,4.549725266
+2023,Poland,1.788854382
+2023,Rumania,2.19089023
+2023,Russia (Soviet Union),1.870828693
+2023,Rwanda,5.244044241
+1960,Serbia,8.282511696
+1961,Serbia,7.987490219
+1962,Serbia,7.668115805
+1963,Serbia,7.409453421
+1964,Serbia,7.197221686
+1965,Serbia,6.899275324
+1966,Serbia,6.618156843
+1967,Serbia,6.276941931
+1968,Serbia,6.236986452
+1969,Serbia,6.107372594
+1970,Serbia,6.066300355
+1971,Serbia,5.873670062
+1972,Serbia,5.718391382
+1973,Serbia,5.504543578
+1974,Serbia,5.366563146
+1975,Serbia,5.205766034
+1976,Serbia,5.049752469
+1977,Serbia,4.888762625
+1978,Serbia,4.827007354
+1979,Serbia,4.785394446
+1980,Serbia,4.711687596
+1981,Serbia,4.679743583
+2023,Serbia,2.049390153
+2023,Sierra Leone,8.461678321
+2023,Slovakia,2.121320344
+1960,Somalia,11.83215957
+1961,Somalia,11.8025421
+1962,Somalia,11.73456433
+1963,Somalia,11.68332145
+1964,Somalia,11.64044673
+1965,Somalia,11.58447237
+1966,Somalia,11.53689733
+1967,Somalia,11.48912529
+1968,Somalia,11.44552314
+1969,Somalia,11.40175425
+1970,Somalia,11.35781669
+1971,Somalia,11.3137085
+1972,Somalia,11.26942767
+1973,Somalia,11.22942563
+1974,Somalia,11.6447413
+1975,Somalia,11.5931014
+1976,Somalia,11.54123044
+1977,Somalia,11.05441088
+1978,Somalia,11.00908716
+1979,Somalia,10.96813567
+1980,Somalia,10.92245394
+1981,Somalia,10.87658034
+2023,Somalia,8.142481194
+1960,South Africa,9.984988733
+1961,South Africa,9.874208829
+1962,South Africa,9.792854538
+1963,South Africa,9.721111048
+1964,South Africa,9.659192513
+1965,South Africa,9.6072889
+1966,South Africa,9.555103348
+1967,South Africa,9.497368056
+1968,South Africa,9.439279634
+1969,South Africa,9.38083152
+1970,South Africa,9.311283478
+1971,South Africa,9.235799911
+1972,South Africa,9.154233993
+1973,South Africa,9.060905032
+2023,South Africa,5.272570531
+2023,Sri Lanka (Ceylon),2.258317958
+2023,Sudan,6.016643583
+2023,Syria,4.086563348
+1960,Taiwan,5.839520528
+1961,Taiwan,5.718391382
+1962,Taiwan,5.48634669
+1963,Taiwan,5.196152423
+1964,Taiwan,5.263078947
+1965,Taiwan,5.347896783
+1966,Taiwan,5.128352562
+1967,Taiwan,4.929503018
+1968,Taiwan,4.732863826
+1969,Taiwan,4.5607017
+1970,Taiwan,4.393176527
+1971,Taiwan,4.23083916
+1972,Taiwan,4.086563348
+1973,Taiwan,3.962322551
+1974,Taiwan,3.860051813
+1975,Taiwan,3.754996671
+1976,Taiwan,3.660601044
+1977,Taiwan,3.577708764
+1978,Taiwan,3.492849839
+1979,Taiwan,3.405877273
+1980,Taiwan,3.31662479
+1981,Taiwan,3.209361307
+2000,Taiwan,2.449489743
+2023,Tajikistan,4.949747468
+2023,Tanzania/Tanganyika,5.375872022
+2023,Thailand,2.48997992
+2023,Turkey (Ottoman Empire),3.033150178
+2023,Uganda,5.366563146
+1960,"Vietnam, Democratic Republic of",
+1961,"Vietnam, Democratic Republic of",
+1962,"Vietnam, Democratic Republic of",
+1963,"Vietnam, Democratic Republic of",
+2023,"Vietnam, Democratic Republic of",3.885871846
+1960,"Vietnam, Republic of",
+1961,"Vietnam, Republic of",
+1962,"Vietnam, Republic of",
+1963,"Vietnam, Republic of",
+1964,"Vietnam, Republic of",
+1965,"Vietnam, Republic of",
+1966,"Vietnam, Republic of",
+1967,"Vietnam, Republic of",
+1968,"Vietnam, Republic of",
+1969,"Vietnam, Republic of",
+1970,"Vietnam, Republic of",
+1971,"Vietnam, Republic of",
+1972,"Vietnam, Republic of",
+1973,"Vietnam, Republic of",
+1974,"Vietnam, Republic of",
+1975,"Vietnam, Republic of",
+1960,Yemen (Arab Republic of Yemen),
+1961,Yemen (Arab Republic of Yemen),
+1962,Yemen (Arab Republic of Yemen),
+1963,Yemen (Arab Republic of Yemen),
+1964,Yemen (Arab Republic of Yemen),
+1965,Yemen (Arab Republic of Yemen),
+1966,Yemen (Arab Republic of Yemen),
+1967,Yemen (Arab Republic of Yemen),
+1968,Yemen (Arab Republic of Yemen),
+1969,Yemen (Arab Republic of Yemen),
+1970,Yemen (Arab Republic of Yemen),
+1971,Yemen (Arab Republic of Yemen),
+1972,Yemen (Arab Republic of Yemen),
+1973,Yemen (Arab Republic of Yemen),
+1974,Yemen (Arab Republic of Yemen),
+1975,Yemen (Arab Republic of Yemen),
+1976,Yemen (Arab Republic of Yemen),
+1977,Yemen (Arab Republic of Yemen),
+1978,Yemen (Arab Republic of Yemen),
+1979,Yemen (Arab Republic of Yemen),
+1980,Yemen (Arab Republic of Yemen),
+1981,Yemen (Arab Republic of Yemen),
+1982,Yemen (Arab Republic of Yemen),
+2023,Zimbabwe (Rhodesia),5.761944116
